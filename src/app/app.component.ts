@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  arrayTable = [
+    {
+      nome: "Maria",
+      idade: 15,
+      data: "10/05/2018"
+    },
+    {
+      nome: "Luiz",
+      idade: 20,
+      data: "12/05/2018"
+    }
+
+  ]
+
+
 }

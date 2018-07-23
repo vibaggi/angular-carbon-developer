@@ -1,0 +1,17 @@
+<div data-modal id="modal-68ip52vvd2p" class="bx--modal is-visible" tabindex="-1">
+  <div class="bx--modal-container">
+    <div class="bx--modal-header">
+      <p class="bx--modal-header__label bx--type-delta">{{subTitle}}</p>
+      <p class="bx--modal-header__heading bx--type-beta">{{title}}</p>
+    </div>
+
+    <div class="bx--modal-content">
+      <p>{{msg}} </p>
+    </div>
+
+    <div class="bx--modal-footer">
+      <button *ngIf="labelBtn2 != null" class="bx--btn bx--btn--tertiary" type="button" (click)="confirmBtn2()" >{{labelBtn2}}</button>
+      <button class="bx--btn bx--btn--primary" type="button" (click)="confirmBtn1()" >{{labelBtn1}}</button>
+    </div>
+  </div>
+</div>
