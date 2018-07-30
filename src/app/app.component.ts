@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -22,5 +22,18 @@ export class AppComponent {
 
   ]
 
+
+  @ViewChild('divScroll') divScroll: ElementRef
+  cards = [1,2,3,4,5,6,7,8,9,1,2,3,4,5]
+  scrollH = 0
+
+
+  exibir(){
+    // console.log(this.divScroll.nativeElement.scrollHeight-this.divScroll.nativeElement.scrollTop-this.divScroll.nativeElement.clientHeight)
+    // console.log(this.divScroll.nativeElement.scrollHeight,this.divScroll.nativeElement.scrollTop)
+
+    console.log(this.divScroll)
+    // this.divScroll.nativeElement.scrollTop = this.divScroll.nativeElement.scrollHeight
+    }
 
 }

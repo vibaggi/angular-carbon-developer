@@ -1,13 +1,24 @@
-<button class="bx--btn bx--btn--danger--primary" (click)="showModal = true">Show modal</button>
+<!-- <div class="bx--grid">
+    <div class="bx--row">
+        <div class="bx--col-xs-12 bx--col-md-5">
+            <app-table [array]="arrayTable" [labelFieldName]="['Nome','Idade', 'Data']" redirect="/detalhe"> </app-table>
+            <app-pagination></app-pagination>
+        </div>
+        <div class="bx--col-xs-12 bx--col-md-5">
+            <button class="bx--btn bx--btn--danger--primary" (click)="showModal = true">Show modal</button>
+        </div>
+    </div>
+</div>
 
 
 
-<app-table [array]="arrayTable" [labelFieldName]="['Nome','Idade', 'Data']" redirect="/detalhe"> </app-table>
 
-
-
-
-<app-modal-confirm *ngIf="showModal" (emitBtn2)="showModal = false" redirect1="/home"
-    msg="Isso é um teste para verificar se a mensagem a ser exibida está correta" 
+<app-modal-confirm *ngIf="showModal" (emitBtn2)="showModal = false" redirect1="/home" msg="Isso é um teste para verificar se a mensagem a ser exibida está correta"
     title="Teste" subTitle="opcional" labelBtn1="Avançar" labelBtn2="Criar novo">
-</app-modal-confirm>
+</app-modal-confirm> -->
+
+
+<div class= 'scroll' appScrollShadow >
+    <div class = "card" *ngFor="let card of cards"></div>
+</div>
+
